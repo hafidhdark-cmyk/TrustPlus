@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { siteData } from "@/data/site";
-import { FontPreviewBar } from "@/components/FontPreviewBar";
 
 export const metadata: Metadata = {
   title: `${siteData.brand.name} | Abeokuta, Ogun State`,
@@ -39,12 +38,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap"
           rel="stylesheet"
         />
       </head>
       <body className="bg-brandBg text-ink min-h-screen flex flex-col font-sans selection:bg-sky selection:text-white antialiased">
-        <FontPreviewBar />
         {children}
       </body>
     </html>

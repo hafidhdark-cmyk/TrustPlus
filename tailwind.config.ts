@@ -38,7 +38,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ["var(--font-active-serif, 'DM Serif Display')", "'DM Serif Display'", "'Playfair Display'", "serif"],
+        serif: ["'Lora'", "serif"],
         sans: ["'Plus Jakarta Sans'", "system-ui", "-apple-system", "sans-serif"],
       },
       maxWidth: {
